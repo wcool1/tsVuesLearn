@@ -1,0 +1,69 @@
+---
+description: 
+globs: *.vue,*.js,*.ts,*,*.html,*.css,*.json,*.md
+alwaysApply: false
+---
+You are an expert in TypeScript, Vite, Vue3, Vue Router, Pinia, VueUse, Headless UI, Element Plus,Node.js, and TailwindCss, with a deep understanding of best practices and performance optimization techniques in these technologies.
+
+Core Principles & Code Style
+
+* Tech Stack: Vue 3 (Composition API), TypeScript, Vite, Vue Router, Pinia, VueUse, Element Plus, TailwindCSS.
+* Mandatory Syntax: Use <script setup> exclusively.
+* Programming Style: Write concise, maintainable TypeScript. Employ functional & declarative patterns; avoid classes.
+* Modularity & DRY: Achieve Don't Repeat Yourself through composables, utilities, and components.
+* File Organization: Keep files focused (one component/composable/util set per file). Organize by feature or type.
+* Naming: Use descriptive names (e.g., isLoading, hasData).
+Naming Conventions
+
+* Directories: kebab-case (e.g., user-profile).
+* Component Files (.vue): PascalCase (e.g., UserProfileCard.vue).
+* Composables (.ts): useCamelCase (e.g., useAuth.ts -> export function useAuth()).
+* Variables/Functions: camelCase.
+* Constants: UPPER_SNAKE_CASE.
+* Exports: Favor named exports (export const ..., export function ...).
+  
+TypeScript Usage
+
+* Strict Typing: Use TypeScript everywhere (lang="ts"). Avoid any.
+* Interfaces vs. Types: Prefer interface for object shapes (extensibility); use type for unions, intersections, primitives, function signatures, defineProps/defineEmits.
+* Props & Emits: Use defineProps<T>() and defineEmits<T>() with interfaces or type literals. Use withDefaults for default prop values.
+* Reactivity Types: Provide explicit types for ref<T>() and reactive<T>().
+* No Enums: Use object literals with as const instead of enum for constants/status maps.
+  
+UI & Styling
+
+* Component Library: Use Element Plus for base UI components.Suggestions if there is a better component library for certain situations.
+* Styling: Use TailwindCSS utility classes primarily.
+* Responsiveness: Implement mobile-first design using Tailwind's breakpoints (sm:, md:, etc.).
+* Customization: Configure tailwind.config.js for theme consistency. Minimize custom CSS; use CSS variables or scoped styles if necessary.
+* 
+  
+Key Tools & Practices
+
+* State Management: Use Pinia with fully typed stores.
+* Routing: Use Vue Router with typed routes and lazy-loaded view components.
+* Linting/Formatting: Enforce rules with ESLint & Prettier.
+
+
+全局代码规范
+
+- **始终优先选择简单方案**
+- **尽可能避免代码重复**
+  - 修改代码前，检查代码库中是否已存在相似功能或逻辑。
+- **编写代码时需区分不同环境**
+  - 明确区分开发环境（dev）、测试环境（test）和生产环境（prod）。
+- **谨慎修改代码**
+  - 仅针对明确需求进行更改，或确保修改内容与需求强相关且已被充分理解。
+- **修复问题时避免引入新技术/模式**
+  - 优先彻底排查现有实现的可能性，若必须引入新方案，需同步移除旧逻辑以避免冗余。
+- **保持代码库整洁有序**
+- **控制单文件代码行数**
+  - 文件中`srcript`代码超过 200-300 行时需重构封装。
+- **仅测试环境使用模拟数据**
+  - 开发与生产环境严禁使用模拟（Mock）数据。
+
+
+
+
+
+
