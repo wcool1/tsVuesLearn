@@ -57,8 +57,8 @@
   | 性能 | 编译过程会引入额外的开销，但生成的 JavaScript 代码在运行时性能与直接编写的 JavaScript 代码相当 | 更简单的解释执行，没有额外的编译开销，运行效率相对较高 |
   | 适用场景 | 大型项目和团队合作，需要更强类型安全性和工具支持的项目；前端框架和库开发，需要构建复杂的应用逻辑和可重用的组件；需要长期维护的项目；与其他静态类型语言集成的项目 | 快速原型开发，小型项目，脚本编写，前端开发中一次性使用的简单脚本等 ;不同的项目和团队有不同的需求，选择使用 TypeScript 还是 JavaScript 取决于你对类型安全、工具支持和生态系统的重视程度，以及项目规模、复杂性和团队成员的技术能力|
 
-  - Ts基础核心语法
-    - TS——JS举例
+### Ts基础核心语法
+- TS——JS举例
   ```typescript
   // TypeScript示例
   let name: string = "Tom";
@@ -476,6 +476,123 @@
   - https://www.bilibili.com/video/BV1q64y1j7aH?vd_source=a02025349c3063d9c9143f9bd7489fdf&spm_id_from=333.788.videopod.sections
 
 ## 项目开发
+
+### 学习资源
+```
+一、优质Vue+TypeScript模板项目
+1. 官方和热门模板
+soybean-admin
+描述：基于Vue3、Vite6、TypeScript、Pinia、NaiveUI的后台管理模板
+特点：清新优雅、高颜值、功能强大
+链接：https://github.com/soybeanjs/soybean-admin
+vue3-h5-template
+描述：基于Vue3、Vite5、TypeScript、Tailwindcss、Vant4的移动端项目基础模板
+特点：开箱即用的移动端项目基础模板
+链接：https://github.com/yulimchen/vue3-h5-template
+vue3-vant-mobile
+描述：基于Vue3生态系统的移动web应用模板
+特点：帮助快速完成业务开发
+链接：https://github.com/easy-temps/vue3-vant-mobile
+elegant-admin
+描述：基于Vue3、Element Plus的后台管理系统模板
+特点：优雅的设计，完善的功能
+链接：https://github.com/zhangyao1990/elegant-admin
+2. 实用学习模板
+Todo-tRPC-Vue3
+描述：展示如何在Vue3中使用tRPC的Todo项目
+特点：可作为项目起点，学习前后端类型安全通信
+链接：https://github.com/guushamann/Todo-tRPC-Vue3
+vue3-example-hooks-ts
+描述：Vue3组合式API与TypeScript的示例项目
+特点：展示如何使用组合式API和TypeScript
+链接：https://github.com/moduslabs/vue3-example-hooks-ts
+vue3-vuex4-ts-modules
+描述：Vue3+Vuex4+TypeScript示例项目，带有完全类型化的store模块
+特点：学习如何在Vuex中使用TypeScript
+链接：https://github.com/JohnathanWhite/vue3-vuex4-ts-modules
+二、实战项目
+vue3-realworld-example-app
+描述：使用Vue3实现的真实世界应用
+特点：完整的前端应用，包含认证、文章管理等功能
+链接：https://github.com/likui628/vue3-realworld-example-app
+vue3-ssr-realworld-example-app
+描述：带SSR的Vue3真实世界应用
+特点：学习Vue3+SSR的最佳实践
+链接：https://github.com/levchak0910/vue3-ssr-realworld-example-app
+quasar-nest_jira-clone
+描述：使用Quasar(Vue3组合式API+TypeScript)+Nest(Node.js)的Jira克隆
+特点：真实世界的Vue Quasar应用示例
+链接：https://github.com/Selithrarion/quasar-nest_jira-clone
+fsd-app-example
+描述：基于Feature-Sliced Design/TS/Vue-3/Pinia/Vite/Tailwind的应用示例
+特点：展示现代前端架构设计
+链接：https://github.com/Semperfai/fsd-app-example
+三、教程和学习资源
+Vue3+TypeScript从入门到实战全系列教程
+链接：可在掘金、B站等平台搜索
+2021必知必会的vite+vue3项目最佳实践
+链接：https://juejin.cn/post/6951649464637636622
+Vue3 全家桶+ Element Plus + Vite + TypeScript + Eslint 项目配置最佳实践
+链接：https://juejin.cn/post/7089301165735755812
+chengpeiquan/learning-vue3
+描述：《Vue3入门指南与实战案例》，关于前端工程化开发的基础知识点，以及TypeScript、Vue3、Pinia的入门学习
+链接：https://github.com/chengpeiquan/learning-vue3
+四、组件库和工具
+element-plus
+描述：基于Vue3的组件库
+链接：https://github.com/element-plus/element-plus
+vant
+描述：轻量、可靠的移动端Vue组件库
+链接：https://github.com/youzan/vant
+naive-ui
+描述：一个Vue3组件库
+链接：https://github.com/tusen-ai/naive-ui
+学习建议
+从模板开始：先选择一个模板项目，了解Vue3+TypeScript的基本结构和配置
+学习基础知识：
+Vue3的组合式API
+TypeScript的基础语法和类型系统
+Vite构建工具的使用
+实战练习：
+从小项目开始，如Todo应用
+逐步尝试更复杂的应用，如博客、电商等
+深入学习：
+状态管理(Pinia/Vuex)
+路由管理(Vue Router)
+组件设计和复用
+TypeScript高级类型和类型推导
+参考最佳实践：
+代码组织和项目结构
+性能优化
+测试策略
+您当前的项目tsVuesLearn可以作为您学习的实践场所，建议从上面列出的模板项目中选择一个作为参考，逐步实现自己的功能。
+
+```
+### 环境配置
+- 推荐使用pnmp，因为下载包更快，原因参考https://pnpm.io/zh/pnpm-vs-npm
+  - 安装:参考https://pnpm.io/zh/installation
+    - windows终端运行`Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression`或者`npm install -g pnpm`
+    - 配置环境变量，找到pnpm.cmd的位置加入到系统变量的path中"D:\all kinds of tools\nodejs\node_global"
+    - 我发现cursor打开新的终端不一定能加载到新的环境变量，还得重启cursor更保险；
+    - pnpm -v检查版本
+  - 换镜像源：
+    - `pnpm config get registry `查看源
+    - `pnpm config set registry https://registry.npmmirror.com`
+    - 如果pnpm i时仍然遇到卡顿
+      - 打开管理员终端
+      ```
+      pnpm store prune
+      pnpm config set registry https://registry.npmmirror.com
+      pnpm install
+      ```
+    - 我发现一个问题：pnpm i只在管理员模式下成功过，解决办法：设置store和global路径(任何不需要管理员权限即可访问的地方，我更偏向pnpm.exe所在的目录)
+    ```
+    pnpm config set store-dir "D:\all kinds of tools\pnpm\store"
+    pnpm config set global-dir "D:\all kinds of tools\pnpm\global"
+    
+    ```
+
+
 - 创建、运行项目：
 ```
 pnpm create vite@latest 项目名 -- --template vue-ts
@@ -483,4 +600,268 @@ cd 目录
 pnpm i
 pnpm run dev
 ```
-- 
+##### PNPM 依赖安装参数说明
+
+```mermaid
+flowchart TD
+    A[PNPM安装权限问题] --> B{问题原因分析}
+    B --> C[权限不足]
+    B --> D[全局依赖目录权限问题]
+    B --> E[Windows特有问题]
+    
+    C --> F[解决方案]
+    D --> F
+    E --> F
+    
+    F --> G[修改PNPM全局存储目录]
+    F --> H[调整权限设置]
+    F --> I[使用npm配置方案]
+    F --> J[禁用NPM链接文件]
+    
+    G --> K[修改配置后验证]
+    H --> K
+    I --> K
+    J --> K
+    
+    K --> L[成功解决]
+```
+
+- PNPM 依赖安装参数含义
+
+在 PNPM（性能优化的 NPM 替代方案）中，`-D` 和 `-g` 是安装依赖包时使用的两个重要参数，它们代表不同的安装模式：
+
+- `-D` 参数（开发依赖）
+
+`-D` 是 `--save-dev` 的简写，表示将依赖包安装为**开发依赖**：
+
+- 依赖会被添加到 `package.json` 文件的 `devDependencies` 部分
+- 这些依赖仅在开发环境中使用，不会包含在生产环境的最终构建中
+- 通常用于安装开发工具、测试框架、构建工具等
+
+**示例用法**：
+```bash
+pnpm add -D typescript eslint vite
+```
+
+- `-g` 参数（全局依赖）
+
+`-g` 是 `--global` 的简写，表示将依赖包安装为**全局依赖**：
+
+- 依赖会被安装到系统的全局位置，而不是当前项目
+- 全局依赖可以在任何项目或命令行中使用，而不需要在每个项目中单独安装
+- 通常用于安装命令行工具或需要在多个项目间共享的工具
+
+**示例用法**：
+```bash
+pnpm add -g typescript vite create-vue
+```
+
+- 其他常见参数
+
+作为补充，PNPM 还有其他常见参数：
+
+- `--save-prod` 或 `-P`：安装为生产依赖（默认行为）
+- `--save-optional` 或 `-O`：安装为可选依赖
+- `--save-exact` 或 `-E`：安装精确版本，不使用 `^` 范围
+
+- 在 Vue3+TS 项目中的应用
+
+在您的 Vue3+TypeScript 项目中：
+
+- 使用 `-D` 安装开发工具，如 TypeScript、ESLint、Vite、测试库等
+- 使用默认模式安装运行时依赖，如 Vue、Vue Router、Pinia 等
+- 全局工具可以用 `-g` 安装，但最好尽量减少全局依赖，以避免版本冲突
+
+
+##### pnpm/npm install的产物
+- npm install 和 pnpm install 的文件差异
+
+```mermaid
+flowchart TB
+    A[包管理器安装] --> B[npm install]
+    A --> C[pnpm install]
+    
+    B --> D[node_modules 扁平结构]
+    B --> E[package-lock.json]
+    B --> F[package.json]
+    
+    C --> G[node_modules 符号链接结构]
+    C --> H[.pnpm 存储]
+    C --> I[pnpm-lock.yaml]
+    C --> J[package.json]
+    
+    D --> K[占用空间大]
+    D --> L[潜在的幽灵依赖]
+    
+    G --> M[占用空间小]
+    G --> N[严格的依赖关系]
+    
+    H --> O[内容寻址存储]
+    H --> P[依赖复用]
+```
+
+- npm install 生成的文件
+
+当你运行 `npm install` 时，会产生以下文件和目录：
+
+1. **node_modules 目录**：
+   - 位置：项目根目录下
+   - 结构：扁平化结构，所有依赖包直接放在 node_modules 目录下
+   - 特点：会把所有依赖及其子依赖都提升到顶层，导致"幽灵依赖"问题（可以使用未声明的依赖）
+
+2. **package-lock.json 文件**：
+   - 位置：项目根目录下
+   - 作用：锁定依赖的确切版本和依赖树结构，确保不同环境下安装相同版本
+   - 内容：包含所有依赖的版本、来源、完整性校验等信息
+
+3. **修改 package.json 文件**：
+   - 如果使用 `npm install <包名> --save` 或 `-S`，会将依赖添加到 package.json 的 dependencies 中
+   - 如果使用 `npm install <包名> --save-dev` 或 `-D`，会将依赖添加到 package.json 的 devDependencies 中
+
+- pnpm install 生成的文件
+
+当你运行 `pnpm install` 时，会产生以下文件和目录：
+
+1. **node_modules 目录**：
+   - 位置：项目根目录下
+   - 结构：采用符号链接结构，非扁平化
+   - 特点：只有 package.json 中声明的依赖才会直接链接到 node_modules 目录下，防止"幽灵依赖"
+
+2. **.pnpm 存储目录**：
+   - 位置：项目的 node_modules/.pnpm 目录下
+   - 作用：所有实际的依赖包都存储在这个目录下，按照包名@版本格式组织
+   - 特点：采用内容寻址存储，相同的依赖包只存储一次
+
+3. **pnpm-lock.yaml 文件**：
+   - 位置：项目根目录下
+   - 作用：类似于 package-lock.json，锁定依赖版本
+   - 内容：包含依赖树结构、依赖版本和完整性校验信息
+
+4. **修改 package.json 文件**：
+   - 与 npm 类似，会根据安装方式更新 dependencies 或 devDependencies
+
+5. **全局存储（可选）**：
+   - 位置：通常在用户主目录下的 .pnpm-store 目录
+   - 作用：存储所有项目共享的依赖
+   - 特点：多个项目可以复用相同的依赖，节省磁盘空间
+
+- 主要区别
+
+1. **依赖存储结构**：
+   - npm：扁平化结构，所有依赖都直接位于 node_modules 下
+   - pnpm：非扁平化结构，使用符号链接，实际文件存储在 .pnpm 目录中
+
+2. **磁盘空间使用**：
+   - npm：每个项目都有完整的依赖副本，占用空间大
+   - pnpm：使用硬链接和符号链接，相同依赖只存储一次，节省空间
+
+3. **依赖隔离**：
+   - npm：可能产生"幽灵依赖"问题
+   - pnpm：严格的依赖隔离，只能访问 package.json 中声明的依赖
+
+4. **锁文件格式**：
+   - npm：使用 package-lock.json（JSON 格式）
+   - pnpm：使用 pnpm-lock.yaml（YAML 格式）
+
+pnpm 的设计理念更加现代化，解决了 npm 和 yarn 中的一些问题，特别是在依赖管理和磁盘空间使用方面更加高效。
+
+##### 存储的区别
+-  pnpm store 管理与 npm 对比
+
+```mermaid
+flowchart TD
+    A[包管理器存储策略] --> B[npm]
+    A --> C[pnpm]
+    
+    B --> D[项目级存储<br>每个项目独立node_modules]
+    D --> E[优点: 项目独立<br>删除项目可完全清理]
+    D --> F[缺点: 空间浪费<br>重复存储相同依赖]
+    
+    C --> G[全局内容寻址存储]
+    G --> H[store-dir<br>全局复用依赖]
+    G --> I[global-dir<br>全局安装的包]
+    
+    H --> J[优点: 节省磁盘空间<br>相同依赖只存储一次]
+    H --> K[缺点: 需要定期清理<br>可能累积未使用的包]
+    
+    L[pnpm store 维护] --> M[pnpm store prune<br>清理未使用的包]
+    L --> N[pnpm store status<br>检查存储健康状态]
+    L --> O[pnpm store verify<br>验证缓存完整性]
+```
+
+-- pnpm 全局存储的管理问题
+
+你观察到的现象是正确的。当你设置了 pnpm 的 store-dir 和 global-dir 后，确实会在这些位置累积越来越多的包，而这些包会占用相当大的磁盘空间。从你分享的配置来看：
+
+```
+pnpm config set store-dir "D:\all kinds of tools\pnpm\store"
+pnpm config set global-dir "D:\all kinds of tools\pnpm\global"
+```
+
+这两个目录确实会随着时间推移不断增长，这是因为 pnpm 的设计理念所导致的。
+
+-- pnpm 与 npm 存储策略的不同
+
+- pnpm 的存储策略
+
+pnpm 使用**内容寻址存储**，将所有包存储在一个全局位置（你配置的 store-dir），然后通过硬链接或符号链接连接到各个项目。这样做的好处是：
+
+- 相同的依赖包只存储一次，节省磁盘空间
+- 安装速度更快，因为已经下载的包可以直接链接
+- 所有项目共享同一个存储，减少了冗余
+
+但这也带来了你所遇到的问题：随着你安装的包越来越多，全局存储会持续增长。
+
+- npm 的存储策略
+
+npm 不会有这个问题的原因是其采用完全不同的策略：
+
+- npm 在每个项目的 node_modules 目录下存储该项目的所有依赖
+- 当你删除一个项目时，其所有依赖也会被一起删除
+- 不同项目的相同依赖会被重复存储，占用更多空间
+
+简单来说，npm 的存储更"即用即抛"，而 pnpm 的存储更长久，旨在多个项目间复用。
+
+-  如何管理 pnpm 存储
+
+是的，你确实需要定期清理 pnpm 存储。以下是几个管理 pnpm 存储的命令：
+
+1. **清理未使用的包**：
+   ```bash
+   pnpm store prune
+   ```
+   这个命令会删除当前没有被任何项目使用的包。
+
+2. **检查存储状态**：
+   ```bash
+   pnpm store status
+   ```
+   这会检查全局存储是否健康。
+
+3. **验证存储完整性**：
+   ```bash
+   pnpm store verify
+   ```
+   这会验证存储中所有包的完整性。
+
+- 权衡与选择
+
+这是一个权衡问题：
+
+- **pnpm 方式**：磁盘使用总量更小，但需要定期维护
+- **npm 方式**：每个项目独立，无需全局维护，但总磁盘使用量更大
+
+如果你更关心整体磁盘空间使用，并且不介意定期运行 `pnpm store prune` 来清理未使用的包，那么 pnpm 的方式更合适。
+
+如果你更喜欢"用完就丢"的简单方式，不想维护全局存储，可以考虑恢复使用 npm 或调整 pnpm 配置为每个项目使用独立存储。
+
+- 建议
+
+1. 定期（比如每个月或当你发现存储占用过大时）运行 `pnpm store prune`
+2. 如果你不再需要某些项目，可以先删除项目，然后运行 prune 命令
+3. 也可以考虑定期检查 global-dir，删除不再使用的全局安装包
+
+总之，pnpm 的存储策略确实需要一些维护，但这是为了获得更高效的包管理而做出的权衡。
+
+### 实操
+### 【Vue3+TypeScript快速上手教程[快速了解Vue3+TS+Pinia并上手ElementPlus实战]】 https://www.bilibili.com/video/BV1c142117Fz/?p=22&share_source=copy_web&vd_source=7f150cf40745ac06f41469483a60fc41

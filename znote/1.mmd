@@ -1,4 +1,27 @@
-flowchart TB
-  node_1((("new_node")))
-  node_2("222")
-  node_2 ==> node_1a
+flowchart TD
+    A[Java+Vue全栈开发] --> B[基础技能]
+    A --> C[框架选择]
+    A --> D[学习路径]
+    
+    B --> B1[前端基础]
+    B1 --> B1a[HTML/CSS/JavaScript]
+    B1 --> B1b[Vue基础]
+    B1 --> B1c[Vue生态]
+    
+    B --> B2[后端基础]
+    B2 --> B2a[Java语法]
+    B2 --> B2b[Spring生态]
+    B2 --> B2c[数据库]
+    
+    C --> C1[从零开发]
+    C --> C2[使用框架]
+    C2 --> C2a[若依框架]
+    C2 --> C2b[其他开发框架]
+    
+    D --> D1[全栈学习阶段]
+    D --> D2[项目实践阶段]
+    D --> D3[应用拓展阶段]
+    
+    D2 --> D2a[是否学习若依?]
+    D2a --> D2b[是:快速搭建项目]
+    D2a --> D2c[否:深入理解原理]
