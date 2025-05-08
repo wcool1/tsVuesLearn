@@ -191,12 +191,21 @@ const htmlContent = renderMarkdown(markdownText);
 </script>
 
 <template>
+  <div class="container">
+    <h1 class="one">123</h1>
   <div>
     <div v-html="htmlContent"></div>
+  </div>
   </div>
 </template>
 
 <style scoped>
+.container {
+  --text-color: red;
+}
+.one{
+ color: var(--text-color);
+}
 .logo {
   height: 6em;
   padding: 1.5em;

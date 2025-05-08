@@ -119,3 +119,38 @@ flowchart TD
 3. **学习最佳实践**：借鉴其中的架构设计和技术集成方案
 
 最重要的是，无论是否选择学习若依，都应该首先打好技术基础，理解核心概念，然后再考虑使用框架来提高开发效率。框架只是工具，真正的能力在于理解并灵活运用技术解决问题。
+
+### 前端学习路线
+```mermaid
+gantt
+    title 前端进阶学习规划 (6个月)
+    dateFormat  YYYY-MM-DD
+    section 1. JavaScript深入
+    JS核心概念与ES6+特性      :a1, 2023-11-01, 14d
+    异步编程与Promise         :a2, after a1, 10d
+    TypeScript基础           :a3, after a2, 14d
+    
+    section 2. Vue3进阶
+    组合式API深入            :b1, 2023-11-15, 10d
+    Vue Router与状态管理     :b2, after b1, 10d
+    Vue3+TS项目实战          :b3, after b2, 14d
+    
+    section 3. 工程化
+    Vite构建工具             :c1, 2023-12-15, 7d
+    Git工作流                :c2, after c1, 7d
+    ESLint与代码规范         :c3, after c2, 5d
+    
+    section 4. 实战项目
+    中型项目开发             :d1, 2023-12-30, 21d
+    项目优化与重构           :d2, after d1, 14d
+    
+    section 5. 计算机基础
+    网络基础与HTTP           :e1, 2024-02-01, 10d
+    数据结构与算法基础       :e2, after e1, 21d
+    
+    section 6. 求职准备
+    项目整理与简历优化       :f1, 2024-03-01, 7d
+    面试题准备              :f2, after f1, 14d
+    模拟面试与调整          :f3, after f2, 10d
+
+```

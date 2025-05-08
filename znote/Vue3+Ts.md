@@ -1,4 +1,4 @@
-##  TS、JS、ES
+##  TS、JS、ES、Css
 - ECMAScript 是由Ecma国际（前身为欧洲计算机制造商协会）制定语言标准规范，而不是具体的编程语言，是 JavaScript 等语言的规范标准，定义了这些语言应该如何实现和工作。主要组成如下：
 
   > -   语法
@@ -474,7 +474,67 @@
   - https://juejin.cn/post/6872111128135073806#heading-31
   - https://typescript.p6p.net/typescript-tutorial/basic.html
   - https://www.bilibili.com/video/BV1q64y1j7aH?vd_source=a02025349c3063d9c9143f9bd7489fdf&spm_id_from=333.788.videopod.sections
+### css
+#### 变量
+```mermaid
+flowchart TD
+    A[CSS变量命名规则] --> B[语法规则]
+    A --> C[约定俗成的命名习惯]
+    A --> D[项目特定规范]
+    
+    B --> B1[必须以--开头]
+    B --> B2[区分大小写]
+    B --> B3[可包含字母/数字/下划线/横线]
+    
+    C --> C1[使用kebab-case]
+    C --> C2[命名空间前缀]
+    C --> C3[功能/用途命名]
+    C --> C4[分层命名]
+    
+    D --> D1[BEM风格]
+    D --> D2[组件前缀]
+    D --> D3[主题变量前缀]
 
+```
+- 设置全局变量，直接在根目录下的style.css中设置:root即可，在各个组件中可以直接使用；
+```
+:root {
+  
+  /* 全局CSS变量 */
+  --text-secondary-color: #888;
+  --primary-color: #646cff;
+  --primary-hover-color: #535bf2;
+}
+
+```
+- 如果在单个组件中设置css变量仅作用于单个组件：在组件的根元素上定义变量，这样变量会向下传递给所有子元素：
+```
+<template>
+  <div class="card-component">
+    <h2 class="card-title">标题</h2>
+    <p class="card-content">内容</p>
+  </div>
+</template>
+
+<style scoped>
+.card-component {
+  /* 在组件根元素上定义变量 */
+  --card-primary-color: #3498db;
+  --card-text-color: #333;
+  --card-padding: 16px;
+}
+
+.card-title {
+  color: var(--card-primary-color);
+}
+
+.card-content {
+  color: var(--card-text-color);
+  padding: var(--card-padding);
+}
+</style>
+
+```
 ## 项目开发
 
 ### 学习资源
