@@ -58,6 +58,7 @@
   | 适用场景 | 大型项目和团队合作，需要更强类型安全性和工具支持的项目；前端框架和库开发，需要构建复杂的应用逻辑和可重用的组件；需要长期维护的项目；与其他静态类型语言集成的项目 | 快速原型开发，小型项目，脚本编写，前端开发中一次性使用的简单脚本等 ;不同的项目和团队有不同的需求，选择使用 TypeScript 还是 JavaScript 取决于你对类型安全、工具支持和生态系统的重视程度，以及项目规模、复杂性和团队成员的技术能力|
 
 ### Ts基础核心语法
+- 运行ts文件需要在根目录配置tsconfig.json文件，一般vue3+ts脚手架的项目创建时会自带；但如果不是前端项目里的ts文件要想运行，也需要在同级目录下创建tsconfig.json，空的也可以；
 - TS——JS举例
   ```typescript
   // TypeScript示例
@@ -233,42 +234,42 @@
     ```
    
   -  接口：所有的方法都是抽象的为类的实现提供规范；
-      ```typescript
-        interface Shape {
-            name: string;
-            age:number,
-
-        }
-
-        const shape: Shape = {
-            name: 'circle',
-            age:25
-
-        };
-      //TypeScript编写一个API的案例
-        import express, { Request, Response } from "express";
-
-        interface User {
+    ```typescript
+      interface Shape {
           name: string;
-          age: number;
-        }
+          age:number,
 
-        const app = express();
+      }
 
-        app.use(express.json());
+      const shape: Shape = {
+          name: 'circle',
+          age:25
 
-        app.post("/users", (req: Request, res: Response) => {
-          const user: User = req.body;
-          // 处理用户数据
-          res.json(user);
-        });
+      };
+    //TypeScript编写一个API的案例
+      import express, { Request, Response } from "express";
 
-        app.listen(3000, () => {
-          console.log("Server is running on port 3000");
-        });
-      
-      ```
- - 接口的继承
+      interface User {
+        name: string;
+        age: number;
+      }
+
+      const app = express();
+
+      app.use(express.json());
+
+      app.post("/users", (req: Request, res: Response) => {
+        const user: User = req.body;
+        // 处理用户数据
+        res.json(user);
+      });
+
+      app.listen(3000, () => {
+        console.log("Server is running on port 3000");
+      });
+    
+    ```
+  - 接口的继承
     ```typescript
 
     interface parent {
